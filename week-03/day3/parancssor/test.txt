@@ -1,1 +1,0 @@
-sort-a fájl tartalmát rendezi
