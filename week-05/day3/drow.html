@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" style="border: solid 1px;"></canvas>
+
+    <script>
+        
+        let canvas = document.getElementById('canvas');  //hivatkozás canvas elemre
+        let ctx = canvas.getContext('2d') //ki kell választanunk canvas contex értékét.lehet még 3d-s.
+        //canvas elem alapértelmezett szél 300px mag 150px.
+        canvas.width = 600;
+        canvas.height = 800;
+        /*
+        //ctx.fillStyle = "green";
+        ctx.strokeStyle = "green"; //körvonal
+       // ctx.fillRect(150,150,300,300); //kitöltött négyszöget ad.
+       ctx.strokeRect(150,150,300,300);  //körvonal
+*/
+       //kör rajzolás
+       //Math.PI
+       ctx.beginPath();
+       //ctx.arc(300,400,58,0,Math.PI*2);
+       //ctx.stroke();
+
+       ctx.arc(300, 400, 58, 0, Match.PI/2);
+       ctx.stroke();
+       ctx.lineTo(300,400);
+       ctx.fill();
+    </script>
+</body>
+</html>

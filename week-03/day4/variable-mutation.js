@@ -56,6 +56,4 @@ const i3 = i1>i2*i2 && i1<i2**1/3;
 console.log (i3);
 // Mondja meg a program hogy i1 nagyobb-e i2 négyzeténél ÉS ugyanakkor kisebb-e i2 köbénél (boolean)
 
-const j = 1521;
-
 // Írasd ki, hogy j osztható-e 3-mal vagy 5-tel (boolean)

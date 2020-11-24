@@ -1,0 +1,1 @@
+// Készíts egy függvény, ami dekódolja a reversed-lines.txt tartalmát
