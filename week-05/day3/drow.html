@@ -10,11 +10,11 @@
 
     <script>
         
-        let canvas = document.getElementById('canvas');  //hivatkozás canvas elemre
-        let ctx = canvas.getContext('2d') //ki kell választanunk canvas contex értékét.lehet még 3d-s.
+        let canvasElement = document.getElementById('canvas');  //hivatkozás canvas elemre
+        let ctx = canvasElement.getContext('2d') //ki kell választanunk canvas contex értékét.lehet még 3d-s.
         //canvas elem alapértelmezett szél 300px mag 150px.
         canvas.width = 600;
-        canvas.height = 800;
+        canvas.height = 800;        //kötelező
         /*
         //ctx.fillStyle = "green";
         ctx.strokeStyle = "green"; //körvonal
