@@ -9,4 +9,4 @@
 const fn = required(fs);
 readFileSync
 
-function ()
+//function ()

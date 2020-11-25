@@ -4,11 +4,10 @@
 // ne jelezzen semmilyen hibát.
 
 'use Strict';
-
+  const fs = require("fs");
 
 let fileName = 'my-file.txt';
 function countMyFile (fileName){
-    const fs = require("fs");
     try{
        let myfile = fs.readFileSync(fileName);
         myfile = myfile.toString();

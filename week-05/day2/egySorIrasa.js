@@ -7,12 +7,12 @@
 
 const fs = require('fs');
 
-let fileName = my-file-txt;
+let fileName = 'my-file-txt';
 let myName = "Kulcsár Éva";
 function writeFileSync (fileName,myName){
   
    let fileContent = fs.writeFileSync(fileName,myName);
-console.log(myFile);
+console.log(fileContent);
 }
 writeFileSync('my-file.txt');
 

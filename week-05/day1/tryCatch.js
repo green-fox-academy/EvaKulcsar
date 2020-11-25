@@ -11,9 +11,14 @@ function susdMegARantottat(){
 function adjHozzaFuszereket(){
     console.log("Adj hozzá sót");
     console.log("Adj hozzá borsot");
-    setTimeout(Function () {
+    try{
+       setTimeout(Function () {
         console.log ("Később hajtódik végre");
-    }, 0);
+    }, 0);  
+    }catch(err){
+        console.log('hiba elkapva:',erro )
+    }
+   
     console.log("Adj hozzá paprikát");
 }
 
