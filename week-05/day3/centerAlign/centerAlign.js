@@ -8,3 +8,19 @@ const ctx = canvas.getContext('2d');
 // a megadott pont és a cavas közepe között.
 // Töltsd meg a canvast vonalakkal, a szélektől indulva 20 pixelenként.
 
+
+let x = 0;
+let y = 0;
+let w = 300;
+let h = 200;
+
+function drawLines(x,y,w,h){
+    ctx.beginPath();
+    ctx.moveTo(x,Y);
+    ctx.lineTo(w,h);
+    ctx.stroke();
+}
+
+for(let i = 0 ; i<=300; i+=20);{
+    drawLines();
+}
