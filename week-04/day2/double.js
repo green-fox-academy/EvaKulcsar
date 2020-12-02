@@ -4,5 +4,8 @@
 // - Írd (logold) ki a `doubling(baseNum)` eredményét a konzolra
 
 let baseNum = 123;
-function doubling () {
+
+function doubling (baseNum) {
+    return (baseNum*2);
 }
+console.log(baseNum);
