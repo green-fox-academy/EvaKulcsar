@@ -5,7 +5,7 @@
 // Próbálj meg beépített metódust használni ciklus helyett!
 
 const animals = ['koal','pand','zebr'];
-const plusA = ['a'];
+const plusA = 'a';
 let animals2 = animals.map(animals => animals+plusA);
 
 console.log(animals2);

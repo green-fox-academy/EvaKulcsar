@@ -4,14 +4,13 @@
 // Logold ki a 4. elemet
 
 const numbers = [1, 2, 3, 8, 5, 6];
+let double = numbers.map(number=>{
+   if(number===8){
+      return number/2;
+   } else {
+     return number;
+   }
+});
 
-let change = numbers.map(number => number/2)
-console.log(change);
-let fourth = numbers[4];
-console.log(fourth);
 
-/*let numbers = [1, 2, 3, 4, 5];
-let doubles = numbers.map(number => number * 2)
-console.log(doubles)
-// --> [ 2, 4, 6, 8, 10 ]
-*/
+console.log(double);
