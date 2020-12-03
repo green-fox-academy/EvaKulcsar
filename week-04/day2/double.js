@@ -3,9 +3,15 @@
 // - Hozz létre egy `doubling` nevű függvény, ami megkettőzi a bemeneti paramétert és visszaad egy egész számot (integer)
 // - Írd (logold) ki a `doubling(baseNum)` eredményét a konzolra
 
+
 let baseNum = 123;
 
-function doubling (baseNum) {
-    return (baseNum*2);
-}
-console.log(baseNum);
+
+function doubling (){
+    return baseNum*2;
+} 
+
+ console.log (doubling());
+
+//let doubling = number => parseInt( number *= 2 );
+//console.log( doubling(baseNum) );
