@@ -12,19 +12,3 @@ function sum() {
 }
 
 console.log(sum());
-
-
-
-
-
-
-/*
-function sum (){
-    let sum = 0;
-    for (let i = 0 ; i<=100 ; i++ ){
-        return sum += parseInt(i);
-    }
-}
-
-console.log(sum());
-*/
