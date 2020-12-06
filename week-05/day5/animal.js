@@ -22,11 +22,7 @@ class Animal {
 
        this.hunger--;
     }
-    hasEnoughhunger() {
-        return this.hunger>0;
-    }
     
-
     drink(){
 
         this.thirst--;
@@ -40,14 +36,26 @@ class Animal {
     }
 }
 
-const animalspeciesdog = new Animal ("dog");
-const animalspediescat = new Animal ("cat");
+const animals = new Animal ("dog");
+const animals2 = new Animal ("cat");
 
-console.log (animalspeciesdog);
-console.log (animalspediescat);
 
-animalspeciesdog.eat();
-animalspediescat.eat();
-animalspeciesdog.play();
-animalspediescat.play();
+
+animals.eat();
+animals2.eat();
   
+console.log (animals);
+console.log (animals2);
+
+animals.drink();
+animals2.drink();
+
+console.log (animals);
+console.log (animals2);
+
+animals.play();
+animals2.play();
+
+console.log (animals);
+console.log (animals2);
+
