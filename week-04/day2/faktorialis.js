@@ -3,18 +3,15 @@
 //   a bemeneti paraméter faktoriálisát
 
 
+let number = 5; 
+
 function factorio(number) {
-    let factorializedNumber = 1;
+    let factorioNumber = 1;
 
-    if (number < 0) {
-        return -1;
-    } else {
-        for (let i = 1; i <= number; i++) {
-            factorializedNumber *= i;
-        }
+    for (let i = 1; i<=number; i++){
+      factorioNumber*=i;
     }
-
-    return factorializedNumber;
+    return factorioNumber;
 }
 
-console.log(factorio(5));
+console.log (factorio(number));
