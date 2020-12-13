@@ -12,6 +12,8 @@ console.log(subint(9, [1, 11, 34, 52, 61]));
 
 module.exports = subint;
 */
+
+
 const number = 2;
 const array =(2,[1,3,4,22,26,40]) ;
 
@@ -30,14 +32,16 @@ function find (number,array){
          }
          
          console.log (newNumbers);
-    
+    }
         
-        }
+        
             
 
- /*   
- console.log (find(newNumbers));   */
-/*
+ 
+ console.log (find(newNumbers));  
+ 
+ 
+
 function subint(number, array) {
     let result = [];
 
@@ -51,4 +55,4 @@ function subint(number, array) {
 
     return result;
 }
-*/
+

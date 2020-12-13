@@ -13,3 +13,15 @@ function greet (){
     return greeting+al;
 }
 console.log(greet(al, greeting));
+
+
+
+
+
+
+
+
+
+
+
+
