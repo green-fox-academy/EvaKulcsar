@@ -17,8 +17,9 @@ const number = 15;
 // 9 * 15 = 135
 // 10 * 15 = 150
 
-let a = 0;
-const b = 15;
-let c= (a*b);
+for (let i = 1; i <=10; i++){
+    let value = (i*number) ;
+    console.log ( `${i } * ${number} = ${value}`);
 
-//for (a = 0, b; a<=10, b <= 15; a++){
+}
+

@@ -1,5 +1,5 @@
 'use strit';
-/*
+
 const lineCount = 4;
 //i=csillagok szama
 for(let i = 0; i<= lineCount*2; i+=2){
@@ -14,7 +14,7 @@ for(let i = 0; i<= lineCount*2; i+=2){
    }
    console.log(strSpace + strStar);
 }
-*/
+
 /*
    //1.
    console.log('*'.repeat(i));
@@ -36,9 +36,37 @@ for(let i =0; i< lineCount*2; i++){
 
 }
 */
+
 const lineCount = 4;
+
+/*
 for (let i = 1; i<=lineCount*2; i+=2){
     for(let i = 1; i <= lineCount; i++){
     console.log(`${''.repeat(lineCount-i)}${'*'.repeat(2*i-1)}`);
 }
 }
+*/
+/*
+   *
+  ***
+ *****
+*******
+*/
+
+/*
+let stars = "*";
+let lineLength = 7;
+let starsCount = 1;
+
+for (let i=0; i<lineCount; i++){
+    let numberOfSpace = (lineLength - starsCount)/2;
+    let space = "";
+    for(let j = 0; j<numberOfSpace; j++){
+        space +="";
+    }
+    console.log(space, stars);
+    stars += "**";
+    starsCount +=2;
+
+}
+*/
