@@ -14,6 +14,8 @@ function appendAFunc(){
 
 console.log(appendAFunc(typo));
 */
+
+/*
 let typo = 'Csincsill';
 let appendAFunc = (str) => {
     let newStr = str += 'a';
@@ -21,3 +23,9 @@ let appendAFunc = (str) => {
 };
 
 console.log( appendAFunc(typo) );
+
+*/
+
+
+
+
