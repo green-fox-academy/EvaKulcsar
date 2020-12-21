@@ -5,7 +5,7 @@
 //   kapott teljes stringel
 // - Írd ki az `appendAFunc(typo)` eredményét  a konzolra
 
-/*
+
 let typo = "Csincsill";
 const newAnimal = "a";
 function appendAFunc(){
@@ -13,9 +13,9 @@ function appendAFunc(){
 };
 
 console.log(appendAFunc(typo));
-*/
 
 /*
+
 let typo = 'Csincsill';
 let appendAFunc = (str) => {
     let newStr = str += 'a';
