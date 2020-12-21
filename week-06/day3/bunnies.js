@@ -21,3 +21,4 @@ function getEarsSum(n) {
 }
 
 console.log(getEarsSum(9));
+

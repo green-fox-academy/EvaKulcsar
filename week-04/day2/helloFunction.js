@@ -5,14 +5,15 @@
 //     - Készülj fel arra az esetre is, ha a bemeneti paramétert üresen hagyják!
 // - `greet`-eld `al`-t
  
-let al = " ";
+let al = " Green Fox";
 
-let greeting = " Szervusz, ";
+let greeting = "";
 
-function greet (){
+function greet (al,greeting = "Szervusz,"){
     return greeting+al;
 }
-console.log(greet(al, greeting));
+console.log (greet(al));
+console.log(greet(al,"szia"));
 
 
 
