@@ -1,0 +1,10 @@
+@use"_margin.scss";
+@use"_padding.scss";
+
+.margin-elements{
+    @extend %margin-reset;
+}
+
+.padding-elements{
+    @extend %padding-reset;
+}

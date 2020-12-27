@@ -1,0 +1,9 @@
+
+.hiba{
+    margin: 20px;
+
+    &-komoly{
+        @extend .hiba;
+        color: red;
+    }
+}

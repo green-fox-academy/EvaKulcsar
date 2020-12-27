@@ -1,0 +1,30 @@
+/*
+body {
+    background-color: #4e4e3e;
+  }
+  body p {
+    background-color: #4e4e3e;
+  }
+  body p section {
+    background-color: #4e4e3e;
+  }
+  body p div {
+    background-color: #4e4e3e;
+*/
+$super-color : #4e4e3e; 
+
+body {
+    background-color: $super-color;
+ 
+    p {
+    background-color: $super-color;
+  
+        section {
+            background-color: $super-color;
+        }
+        div {
+            background-color: $super-color;
+        }
+}
+  
+}

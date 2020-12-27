@@ -1,0 +1,25 @@
+
+
+
+@mixin basicFun () {
+    background-color:#acac27;
+    font-size:50px;
+    margin:35px;
+
+}
+
+
+body {
+    @include basicFun();
+    p {
+        @include basicFun();
+        section {
+            @include basicFun();
+        }
+        div {
+            @include basicFun();
+        }
+
+    }
+}
+
