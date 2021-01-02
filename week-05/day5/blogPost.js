@@ -1,3 +1,4 @@
+'use strict';
 //Készíts egy BlogPost osztályt, aminek a következők a tagváltozói:
 //authorName
 //title

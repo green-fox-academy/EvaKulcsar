@@ -1,3 +1,4 @@
+'use strict';
 //Készíts egy Animal osztályt
 //Minden állatnak van egy hunger (éhség) értéke, ami egy egész szám
 //Minden állatnak van egy thirst (szomjúság) értéke, ami egy egész szám
@@ -9,53 +10,43 @@
 
 class Animal {
     species;
-    hunger;
-    thirst;
+    hunger = 50;
+    thirst = 50;
   
-    constructor (species,hunger=50,thirst=50){
+    constructor (species){
         this.species = species;
-        this.hunger = hunger;
-        this.thirst = thirst;
     }
 
     eat(){
 
-       this.hunger--;
+        this.hunger--;
     }
     
     drink(){
 
-        this.thirst--;
+       this.thirst--;
     }
 
     play(){
 
-        this.hunger++;
-        this.thirst++;
+        this.hunger++ && this.thirst++;
 
     }
 }
 
-const animals = new Animal ("dog");
-const animals2 = new Animal ("cat");
+const animals = [
+    new Animal('Dog'),
+    new Animal('Cat'),
+    new Animal('Duck'),
 
+]
 
+animals.forEach((animal, i) => animal.eat());
+animals.forEach((animal, i) => animal.drink());
+animals.forEach((animal, i) => animal.play());
+//animals.eat();
+//animals.drink();
+//animals.play();
 
-animals.eat();
-animals2.eat();
-  
-console.log (animals);
-console.log (animals2);
-
-animals.drink();
-animals2.drink();
-
-console.log (animals);
-console.log (animals2);
-
-animals.play();
-animals2.play();
-
-console.log (animals);
-console.log (animals2);
+console.log(animals);
 

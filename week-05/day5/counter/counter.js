@@ -1,3 +1,5 @@
+'use strict'
+
 //Készíts egy Counter osztályt
 //Legyen egy number tulajdonsága
 //Példányosításkor tudjuk ezt az értéket megadni, de ha nem adunk meg, akkor az alapérték legyen 0
@@ -11,16 +13,26 @@
 //A root mappádból futtasd a npm install tape @types/tape --save-dev parancsot (ahol már van egy package-lock.json file-od)
 //Futtasd a tesztfile-t a node counter.test.hu.js paranccsal
 
-class Counter{
-    number = 10;
+class Counter {
+    number;
+    startnumber = 0;
 
-    constructor(){
-        this.number;
+    constructor(number=0){
+            this.number = number;
+            this.strartnumber = number;
+
     }
 
-    add(){
-        return this.number ++;
-    
+    add(number=1){
+        this.number +=number;
     }
-}
-console.log(new Counter);
+    get(){
+        return this.number;
+    }
+    reset(){
+        this.number = this.startnumber;
+    }
+};
+
+export {Counter};
+

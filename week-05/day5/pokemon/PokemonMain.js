@@ -1,4 +1,4 @@
-import { Pokemon } from './Pokemon.hu.js';
+import { Pokemon } from './Pokemon.js';
 
 let pokemonOfAsh = initializePokemon();
 
@@ -20,4 +20,13 @@ function initializePokemon() {
     new Pokemon('Balbasaur', 'water', 'fire'),
     new Pokemon('Kingler', 'water', 'fire')
   ];
+}
+
+function chooseEffective (pokemonList, wildPokemon) {
+  for(let i=0; i< pokemonList.length; i++){
+    if (pokemonList[i].effectiveAgainst === wildPokemon.type){
+      return pokemonList[i].name;
+    }
+  }
+  
 }

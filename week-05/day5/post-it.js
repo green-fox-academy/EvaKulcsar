@@ -22,3 +22,4 @@ class PostIt{
 console.log (new PostIt("orange","blue","Egymegérett a meggy"));
 console.log (new PostIt("pink","black","Ketto,csipkebokor vessző"));
 console.log (new PostIt("yellow","green","1 liter tej!"));
+
