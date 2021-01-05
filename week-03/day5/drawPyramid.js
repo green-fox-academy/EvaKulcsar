@@ -8,12 +8,9 @@
  *****
 *******
 */
-const star = '*';
-const space = ' ';
 
 const lineCount = 4;
 
-for (let spac = lineCount - 1, str = 1; spac>= 0; spac--) {
-    console.log(space.repeat(spac) + star.repeat(str));
-    str+=2;
+for (let i = 1; i <= lineCount; i++) {
+    console.log(' '.repeat(lineCount - i) + '*'.repeat(i * 2 - 1))
 }
