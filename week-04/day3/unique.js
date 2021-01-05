@@ -1,3 +1,4 @@
+'use strict'
 // Hozz létre egy függvényt, ami kap egy számokból álló listát paraméterként
 // Visszad egy számokból álló listát, ahol minden szám pontosan egyszer
 // szerepel

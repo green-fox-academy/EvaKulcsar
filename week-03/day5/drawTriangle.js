@@ -11,8 +11,10 @@ const lineCount = 4;
 // ****
 //
 // A háromszögnek annyi sora legyen, mint amennyi a lineCount értéke
-let stars = "*";
-for (let i = 1; i<=lineCount; i++){
-    console.log (stars);
-    stars += "*";
+
+let stars = '*';
+for (let i = 1; i<=lineCount; i++){ 
+    console.log(stars);
+    stars += '*';
+
 }

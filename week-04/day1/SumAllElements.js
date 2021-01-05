@@ -2,6 +2,8 @@
 // Hozz létre egy `numbers` változót az alábbi tartalommal: `[3, 4, 5, 6, 7]`
 // Logold ki az elemek összegét a konzolra!
 
+
+
 const numbers = [3, 4, 5, 6, 7];
 
 let total = 0;
@@ -20,4 +22,3 @@ let numbers2 = [3, 4, 5, 6, 7];
 let sum2 = 0;
 numbers2.forEach( number => sum2 += number );
 console.log( sum2 );
-

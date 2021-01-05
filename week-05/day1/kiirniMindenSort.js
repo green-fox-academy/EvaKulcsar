@@ -6,14 +6,13 @@
 // akkor írja ki, hogy: 'Unable to read file: my-file.txt'
 
 
-/*
+
 const fs = require('fs');
 
 const myFile = fs.readFileSync('my-file.txt')
 console.log (myFile.toString());
-*/
 
-const fs = require('fs');
+
 
 function printmyFile(fileName){
     try{
@@ -25,8 +24,9 @@ function printmyFile(fileName){
     }
    
 }
-printmyFile('my-files.txt');
-/*
+
+//printmyFile('my-files.txt');
+
 function printmyFile(fileName){
     try {
         const myFile = fs.readFileSync(fileName);
@@ -38,6 +38,3 @@ function printmyFile(fileName){
 }
   
 printmyFile('mydog.txt');
-
-*/
-
