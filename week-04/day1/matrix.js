@@ -35,7 +35,7 @@ let size = 4;
 for (let i = 0; i < size; i++) {
     matrix[i] = [];
     for (let j = 0; j < size; j++) {
-        if (size - i - 1 === j) {
+        if (size -i - 1 === j) {
             matrix[i][j] = 1;
         } else {
             matrix[i][j] = 0;
