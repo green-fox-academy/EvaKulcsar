@@ -8,20 +8,27 @@
 //mergeElements(["apple", "pear", "banana", "orange"], ["dog", "cat"]);
 //Példa eredmény:
 //["apple", "dog", "pear", "cat", "banana", "orange"]
-let fruits = ["apple", "pear", "banana", "orange"];
-let animals = ["dog", "cat"];
 
-function mergeElements(fruits,animals) {
-    let shorterArray;
-    let longerArray;
-    if (fruits.length < animals.length) {
-        shorterArray = fruits;
-        longerArray = animals;
-    } else {
-        shorterArray = animals;
-        longerArray = fruits;
+
+function mergeElements(...args) {
+    const total = [];
+    for (let i = 0; i < Math.max(args[0].length, args[1].length) * 2; i++) {
+      if (i % 2 && args[1][Math.floor(i / 2)] !== undefined) {
+        total.push(args[1][Math.floor(i / 2)]);
+      } else if (i % 2 === 0 && args[0][i / 2] !== undefined) {
+        total.push(args[0][i / 2]);
+      }
     }
-    //return shorterArray;
-
-}
-
+    return total;
+  }
+  
+  const fruits = ['kiwi', 'banana', 'raspberry', 'lime'];
+  const animal = ['dog', 'cat', 'hippo'];
+  
+  console.log(mergeElements(fruits, animal));
+  
+  const merged = mergeElements(
+    ['apple', 'pear', 'banana', 'orange'],
+    ['dog', 'cat']
+  );
+  console.log(merged);
