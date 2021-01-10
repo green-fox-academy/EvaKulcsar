@@ -2,6 +2,7 @@ export default class CandyShop {
     sugar = 0;
     income= 0;
     inventory =[];
+    sugarUnitPrice = 600;
 
     constructor(amountOfSugar){
 
@@ -23,33 +24,67 @@ export default class CandyShop {
         })
     }
     
-    sell(amountToBeSold){
-    }
-    /*
-    this.income += this.sellprice;
-    this.inventory -= this.sellSugar;
-    if (sellSugar>=inventory){
-        throw error ('Készlet hiány!'){
+    sell(amountShouldBeSold){
+        const amountCanBeSold = this.inventory.length;
+        let amountToBeSold = Math.min(amountCanBeSold, amountShouldBeSold);
 
-        }else {
-            sellSugar == inventory
+        const candisToBeSold = this.inventory.splice(0,amountToBeSold);
+
+        candisToBeSold.forEach((candy) => {
+            this.income+=candy.getPrice();
+        });
+
+
+
+        /*
+        let amountToBeSold = 0;
+        if (amountCanBeSold >= amountShouldBeSold ){
+            amountToBeSold = amountShouldBeSold;
+        }else{
+            amountToBeSold = amountCanBeSold;
+        }
+        for (let i=0; i<amountToBeSold; i++){
+            this.income+=this.inventory[i].getPrice();
+            this.inventory.shift();
+        }
+        */
+        
+    }
+
+    buySugar(amountInKG){
+        const priceOfSugar = amountInKG*this.sugarUnitPrice;
+        if(this.income < priceOfSugar){
+                throw new Error ("Nincs elég bevétel!")
+        }
+        this.sugar+=amountInKG*1000;
+        this.income-=priceOfSugar;
+    } 
+
+
+    toString(){
+        let output='';
+        let hardCandyCount = 0;
+        let lollipopCount = 0;
+
+        this.inventory.forEach((candy) =>{
+            if(candy instanceof Lollipop){
+            lollipopCount++;
+            }else if (candy instanceof HardCandy) {
+            hardCandyCount++;
+            
+        }
+               
+            });
+            output+= `Készlet: ${hardCandCount} cukorka, ${lollipopCount} nyalóka;`
+            output+= `Bevétel: ${this.income} Ft; cukor: ${this.sugar} gramm`
+
+
+            return output;
+
         }
     }
 
-buySugar(valueKg){
-    if(income<0){
-        throw error ("Nincs bevétel!")
-    }else {
-        valueKg += amountOfSugar;
-        this.income -= this.sugarOfPrice;
-    }
-}
-toString(){
-    'Készlet: 0 cukorka, 1 nyalóka; bevétel: 30000 Ft; cukor: 400 gramm'
-}
-}
-*/
-}
+    
     
 
 
