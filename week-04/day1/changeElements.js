@@ -16,3 +16,4 @@ let double = numbers.map(number=>{
 
 
 console.log(double);
+console.log(numbers)
