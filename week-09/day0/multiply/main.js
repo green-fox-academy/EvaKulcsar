@@ -1,2 +1,0 @@
-let multiply = required 
-
