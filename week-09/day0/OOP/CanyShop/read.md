@@ -8,6 +8,8 @@ Nyalóka (Lollipop)
 Az ára 600 Ft és 60 gramm cukorból készül.
 Cukorka (HardCandy)
 Az ára 1200 Ft és 80 gramm cukorból készül.
+
+
 Édességbolt (CandyShop)
 Az édességboltot a rendelkezésre álló cukor mennyisége (sugar), a bevétel (income) és a készlet (inventory, az édességek listája) jellemzi.
 
@@ -56,4 +58,5 @@ Van egy szöveggé alakító (toString) metódusa, amely az édességboltot repr
 
 visszatér egy string-gel a következő formátumban:
 
-Készlet: 0 cukorka, 1 nyalóka; Bevétel: 30000 Ft; Cukor: 400 gramm
+Készlet: 0 cukorka, 1 nyalóka; 
+Bevétel: 30000 Ft; Cukor: 400 gramm
