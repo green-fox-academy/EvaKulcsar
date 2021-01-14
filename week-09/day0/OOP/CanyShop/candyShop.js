@@ -67,15 +67,15 @@ export default class CandyShop {
         let lollipopCount = 0;
 
         this.inventory.forEach((candy) =>{
-            if(candy instanceof Lollipop){
+            if(candy instanceof lollipopCount){
             lollipopCount++;
-            }else if (candy instanceof HardCandy) {
+            }else if (candy instanceof hardCandyCount) {
             hardCandyCount++;
             
         }
                
             });
-            output+= `Készlet: ${hardCandCount} cukorka, ${lollipopCount} nyalóka;`
+            output+= `Készlet: ${hardCandyCount} cukorka, ${lollipopCount} nyalóka;`
             output+= `Bevétel: ${this.income} Ft; cukor: ${this.sugar} gramm`
 
 
