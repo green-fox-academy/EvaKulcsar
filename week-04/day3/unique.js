@@ -1,17 +1,22 @@
-'use strict'
-// Hozz létre egy függvényt, ami kap egy számokból álló listát paraméterként
-// Visszad egy számokból álló listát, ahol minden szám pontosan egyszer
-// szerepel
-
-let numberCut = [];
-function unique(arr) {
-    for (i = 0; i<=arr.length; i++){
-        if (arr){
-            return
-        }
+function mergeElements(...args) {
+    const total = [];
+    for (let i = 0; i < Math.max(args[0].length, args[1].length) * 2; i++) {
+      if (i % 2 && args[1][Math.floor(i / 2)] !== undefined) {
+        total.push(args[1][Math.floor(i / 2)]);
+      } else if (i % 2 === 0 && args[0][i / 2] !== undefined) {
+        total.push(args[0][i / 2]);
+      }
     }
-}
-
-//  Példa
-console.log(unique([1, 11, 34, 11, 52, 61, 1, 34]));
-//  ezt kéne kiírnia: `[1, 11, 34, 52, 61]`
+    return total;
+  }
+  
+  const fruits = ['kiwi', 'banana', 'raspberry', 'lime'];
+  const animal = ['dog', 'cat', 'hippo'];
+  
+  console.log(mergeElements(fruits, animal));
+  
+  const merged = mergeElements(
+    ['apple', 'pear', 'banana', 'orange'],
+    ['dog', 'cat']
+  );
+  console.log(merged);
