@@ -10,7 +10,7 @@ class Animal{
         this.name = name;      
     }
 
-    getOwnername(){             //ha szeretném kinyerni az owernamet getther-rel
+    getOwnername(){             //ha szeretném kinyerni az owernamet getter-rel
         return this.ownerName   //visszaadjuk  -átlépünk a main-be
     }
     heal(){                     //metódus,amivel lehet gyógyítani

@@ -6,17 +6,22 @@ import Dog from './Dog.js';
 import Parrot from './Parrot.js'
 import AnimalShelter from './AnimalShelter.js'
 
-const buksi = new Animal("Buksi","Thor"); //kinyerni példányisítás
-const animal = new Animal();          
+const buksi = new Animal("Buksi","Thor"); //kinyerni példányisítás Animalből
+const animal = new Animal();  
 const ownerName = buksi.getOwnername();
+//console.log(ownerName);
+console.log(buksi.toString());          //buksi is healthy and adoptable
+console.log(animal.toString());         //Animal is healthy and adoptable
+console.log(String(buksi));              //buksi is healthy and adoptable
+
 const sziamiau = new Cat("Sziamiau","HókuszPók");
+console.log(sziamiau);
 const scoobyDoo = new Dog("Scooby Doo");
+console.log(scoobyDoo);
 scoobyDoo.setToSick();
 const gyurika = new Parrot("Gyurika","Jack Sparrow");
-const noe = new AnimalShelter();
-console.log(sziamiau);
-console.log(scoobyDoo);
 console.log(gyurika);
-//console.log(buksi);
+const noe = new AnimalShelter();
+
 console.log(animal.toString());
 
